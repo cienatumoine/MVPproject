@@ -1,0 +1,37 @@
+{
+  "name": "mvpproject",
+  "version": "1.0.0",
+  "description": "This project is an IP Access Control REST API that allows users, services, and approved IP records to be managed through a relational database. The goal is to provide a backend foundation for a system that verifies whether a users IP address is allowed to access a specific internal service.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "db:setup": "node database/setup.js",
+    "db:seed": "node database/seed.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cienatumoine/MVPproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cienatumoine/MVPproject/issues"
+  },
+  "homepage": "https://github.com/cienatumoine/MVPproject#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  }
+}
